@@ -1,0 +1,162 @@
+/* fonts */
+@font-face {
+    font-family: 'Regular Bai Jamjuree';
+    src: url(../fonts/BarlowSemiCondensed-Regular.ttf);
+}
+
+/* Variables */
+:root {
+    /* Primary colors */
+    --strong-cyan: #26baa4;
+    --light-blue: #6173ff;
+    /* Netural colors */
+    --dark-grayish-blue: rgb(76, 84, 93);
+    --grayish-blue: rgb(159, 171, 178);
+    --white: rgb(255, 255, 255);
+
+    --paragraph-line-height: 1.5;
+    --paragraph-font-size: 1.1.125em;
+}
+
+/* Global rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Regular Bai Jamjuree';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    inline-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 70vh;
+    padding-block: 5rem;
+    padding-inline: 1.25rem;
+}
+
+/* Main Components */
+.heading {
+    text-align: center;
+}
+
+.heading__title {
+    color: var(--dark-grayish-blue);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.heading__subtitle {
+    color: var(--grayish-blue);
+    font-size: var(--paragraph-font-size);
+    inline-size: 68%;
+    margin-inline: auto;
+    margin-block: 1.25rem 2.5rem;
+    line-height: var(--paragraph-line-height);
+}
+
+/* media */
+@media (max-width: 37.5em) {
+    .heading__title {
+        font-size: .6em;
+    }
+
+    .heading__subtitle {
+        inline-size: 100%;
+    }
+}
+
+@media (min-width: 37.5em) and (max-width: 50em) {
+    .heading__title {
+        font-size: 1em;
+    }
+
+    .heading__subtitle {
+        inline-size: 80%;
+    }
+}
+
+/* End main copmonents */
+
+
+/* Start main */
+
+/* Start landing section */
+.landing-section {
+    background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: cover;
+}
+
+.landing-section .container {
+    flex-direction: column;
+}
+
+.logo {
+    margin-bottom: 3.125rem;
+}
+
+.landing-section .heading__title {
+    font-size: 2.25rem;
+}
+
+.download-btn {
+    border-radius: 1.5625rem;
+    color: var(--white);
+    font-size: var(--paragraph-font-size);
+    padding: 0.8rem 1.5rem;
+}
+
+.download-btn--ios {
+    background-color: var(--strong-cyan);
+    margin-inline-end: 0.9375rem;
+    box-shadow: 0px 6px 15px -8px #26baa4;
+}
+
+.download-btn--ios:hover {
+    background-color: rgb(38 186 164 / 80%);
+}
+
+.download-btn--mac {
+    background-color: var(--light-blue);
+    box-shadow: 0px 6px 15px -8px #6173ff;
+}
+
+.download-btn--mac:hover {
+    background-color: rgb(97 115 255 / 80%);
+}
+
+@media (max-width: 37.5em) {
+    .landing-section .heading__title {
+        font-size: 2em;
+    }
+
+    .download {
+        align-items: stretch;
+        flex-direction: column;
+        text-align: center;
+        inline-size: 100%;
+    }
+
+    .download-btn--ios {
+        margin-inline-end: 0;
+        margin-block-end: 0.9375rem;
+    }
+}
+
+/* End landing section */
+
+/* End main */
