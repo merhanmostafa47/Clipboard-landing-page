@@ -44,7 +44,7 @@ ul {
     inline-size: 100%;
     margin-left: auto;
     margin-right: auto;
-    min-height: 70vh;
+    min-height: 80vh;
     padding-block: 5rem;
     padding-inline: 1.25rem;
 }
@@ -52,27 +52,28 @@ ul {
 /* Main Components */
 .heading {
     text-align: center;
+    margin-block-end: 3.5rem;
 }
 
 .heading__title {
     color: var(--dark-grayish-blue);
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 600;
 }
 
 .heading__subtitle {
     color: var(--grayish-blue);
     font-size: var(--paragraph-font-size);
-    inline-size: 68%;
+    inline-size: 36%;
     margin-inline: auto;
-    margin-block: 1.25rem 2.5rem;
+    margin-block: .8rem 0;
     line-height: var(--paragraph-line-height);
 }
 
 /* media */
 @media (max-width: 37.5em) {
     .heading__title {
-        font-size: .6em;
+        font-size: 1.6em;
     }
 
     .heading__subtitle {
@@ -80,13 +81,9 @@ ul {
     }
 }
 
-@media (min-width: 37.5em) and (max-width: 50em) {
-    .heading__title {
-        font-size: 1em;
-    }
-
+@media (min-width: 37.5em) and (max-width: 65em) {
     .heading__subtitle {
-        inline-size: 80%;
+        inline-size: 60%;
     }
 }
 
@@ -110,7 +107,7 @@ ul {
 }
 
 .landing-section .heading__title {
-    font-size: 2.25rem;
+    font-size: 2.375rem;
 }
 
 .download-btn {
@@ -158,5 +155,70 @@ ul {
 }
 
 /* End landing section */
+
+
+/* Start Track snippts section */
+.track-sinppets__content {
+    justify-content: space-between;
+}
+
+.track-sinppets__image {
+    inline-size: 50%;
+    position: relative;
+    inset-inline-start: -4.375rem;
+}
+
+.track-sinppets__image img {
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: contain;
+}
+
+.track-sinppets__examples {
+    align-items: flex-start;
+    flex-direction: column;
+    inline-size: 45%;
+}
+
+.track-sinppets__examples .heading {
+    text-align: start;
+}
+
+.track-sinppets__examples .heading__title {
+    font-size: 1.4rem;
+}
+
+.track-sinppets__examples .heading__subtitle {
+    inline-size: 65%;
+    margin-inline: unset;
+}
+
+@media (max-width: 48em) {
+    .track-sinppets__content {
+        flex-direction: column;
+    }
+
+    .track-sinppets__image {
+        inline-size: 100%;
+        inset-inline-start: 0;
+        margin-block-end: 3.125rem;
+    }
+
+    .track-sinppets__examples {
+        inline-size: 100%;
+        align-items: center;
+    }
+
+    .track-sinppets__examples .heading {
+        text-align: center;
+    }
+
+    .track-sinppets__examples .heading__subtitle {
+        inline-size: 100%;
+        margin-inline: auto;
+    }
+}
+
+/* End Track snippts section */
 
 /* End main */
