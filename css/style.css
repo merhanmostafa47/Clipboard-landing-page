@@ -52,7 +52,7 @@ ul {
 /* Main Components */
 .heading {
     text-align: center;
-    margin-block-end: 3.5rem;
+    margin-block-end: 4rem;
 }
 
 .heading__title {
@@ -220,5 +220,14 @@ ul {
 }
 
 /* End Track snippts section */
+
+
+/* Start clipboard acess */
+.clipboard-access img{
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: contain;
+}
+/* End clipboard acess */
 
 /* End main */
