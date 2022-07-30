@@ -26,6 +26,32 @@
     font-family: 'Regular Bai Jamjuree';
 }
 
+*::first-letter {
+    text-transform: capitalize;
+}
+
+*::selection {
+    background: var(--strong-cyan);
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    inline-size: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--strong-cyan);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-blue);
+}
+
 a {
     text-decoration: none;
 }
@@ -42,10 +68,9 @@ ul {
 
 .container {
     inline-size: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 80vh;
-    padding-block: 5rem;
+    margin-inline: auto;
+    min-block-size: 80vh;
+    padding-block: 3rem;
     padding-inline: 1.25rem;
 }
 
@@ -72,8 +97,12 @@ ul {
 
 /* media */
 @media (max-width: 37.5em) {
+    .container {
+        min-block-size: 50vh;
+    }
+
     .heading__title {
-        font-size: 1.6em;
+        font-size: 1.6rem;
     }
 
     .heading__subtitle {
@@ -103,7 +132,8 @@ ul {
 }
 
 .logo {
-    margin-bottom: 3.125rem;
+    margin-block-start: 5rem;
+    margin-block-end: 3.125rem;
 }
 
 .landing-section .heading__title {
@@ -223,11 +253,40 @@ ul {
 
 
 /* Start clipboard acess */
-.clipboard-access img{
+.clipboard-access img {
     max-inline-size: 100%;
     block-size: auto;
     object-fit: contain;
 }
+
 /* End clipboard acess */
+
+
+/* Start supercharge workflow */
+.supercharge-workflow__container {
+    gap: 1rem;
+}
+
+.supercharge-workflow__box {
+    min-inline-size: 32%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.supercharge-workflow__box img {
+    margin-block-end: 2rem;
+}
+
+.supercharge-workflow__box .heading__subtitle {
+    inline-size: 90%;
+}
+
+@media (max-width: 48em) {
+    .supercharge-workflow__container {
+        flex-direction: column;
+    }
+}
+
+/* End supercharge workflow */
 
 /* End main */
