@@ -71,7 +71,7 @@ ul {
     margin-inline: auto;
     min-block-size: 80vh;
     padding-block: 3rem;
-    padding-inline: 1.25rem;
+    padding-inline: 5rem;
 }
 
 /* Main Components */
@@ -99,6 +99,7 @@ ul {
 @media (max-width: 37.5em) {
     .container {
         min-block-size: 50vh;
+        padding-inline: 1.25rem;
     }
 
     .heading__title {
@@ -195,7 +196,7 @@ ul {
 .track-sinppets__image {
     inline-size: 50%;
     position: relative;
-    inset-inline-start: -4.375rem;
+    inset-inline-start: -7.375rem;
 }
 
 .track-sinppets__image img {
@@ -263,6 +264,10 @@ ul {
 
 
 /* Start supercharge workflow */
+.supercharge-workflow .container {
+    min-block-size: 70vh;
+}
+
 .supercharge-workflow__container {
     gap: 1rem;
 }
@@ -281,12 +286,32 @@ ul {
     inline-size: 90%;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 58em) {
     .supercharge-workflow__container {
         flex-direction: column;
     }
 }
 
 /* End supercharge workflow */
+
+/* Start partener companies  */
+.partener-companies .container {
+    min-block-size: 40vh;
+}
+
+.partener-companies__container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media (max-width: 48em) {
+    .partener-companies__container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+/* End partener companies  */
 
 /* End main */
