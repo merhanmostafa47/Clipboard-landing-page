@@ -69,7 +69,7 @@ ul {
 .container {
     inline-size: 100%;
     margin-inline: auto;
-    min-block-size: 80vh;
+    min-block-size: 36vh;
     padding-block: 3rem;
     padding-inline: 5rem;
 }
@@ -98,7 +98,6 @@ ul {
 /* media */
 @media (max-width: 37.5em) {
     .container {
-        min-block-size: 50vh;
         padding-inline: 1.25rem;
     }
 
@@ -146,6 +145,8 @@ ul {
     color: var(--white);
     font-size: var(--paragraph-font-size);
     padding: 0.8rem 1.5rem;
+    min-inline-size: 11rem;
+    text-align: center;
 }
 
 .download-btn--ios {
@@ -264,10 +265,6 @@ ul {
 
 
 /* Start supercharge workflow */
-.supercharge-workflow .container {
-    min-block-size: 70vh;
-}
-
 .supercharge-workflow__container {
     gap: 1rem;
 }
@@ -295,10 +292,6 @@ ul {
 /* End supercharge workflow */
 
 /* Start partener companies  */
-.partener-companies .container {
-    min-block-size: 40vh;
-}
-
 .partener-companies__container {
     justify-content: space-around;
     flex-wrap: wrap;
@@ -313,5 +306,9 @@ ul {
 }
 
 /* End partener companies  */
+
+/* Start download section */
+
+/* End download section */
 
 /* End main */
