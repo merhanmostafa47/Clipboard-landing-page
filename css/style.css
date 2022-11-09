@@ -69,8 +69,8 @@ ul {
 .container {
     inline-size: 100%;
     margin-inline: auto;
-    min-block-size: 36vh;
-    padding-block: 3rem;
+    min-block-size: 40vh;
+    padding-block: 4rem;
     padding-inline: 5rem;
 }
 
@@ -293,6 +293,7 @@ ul {
 
 /* Start partener companies  */
 .partener-companies__container {
+    inline-size: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 2rem;
@@ -307,8 +308,104 @@ ul {
 
 /* End partener companies  */
 
-/* Start download section */
-
-/* End download section */
-
 /* End main */
+
+/* Start footer */
+footer {
+    background: #eee;
+}
+
+footer .container {
+    min-block-size: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+footer .container .logo {
+    inline-size: 4.5rem;
+    block-size: 4.5rem;
+    margin-block: 0;
+    margin-inline-end: 5rem;
+}
+
+footer .container .logo img {
+    max-inline-size: 100%;
+    object-fit: cover;
+}
+
+footer .container .navigation__list-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+footer .container .navigation__list-container .navigation__list {
+    margin-inline: 3rem;
+}
+
+footer .container .navigation__list-container .navigation__list li:not(:last-child) {
+    margin-block-end: 1.5rem;
+}
+
+footer .container .navigation__list-container .navigation__list li a {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--dark-grayish-blue);
+    transition: .3s;
+}
+
+footer .container .navigation__list-container .navigation__list li a:hover {
+    color: var(--strong-cyan);
+}
+
+footer .container .social {
+    margin-inline-start: auto;
+}
+
+footer .container .social a {
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+    margin-inline: .8rem;
+}
+
+footer .container .social a:hover {
+    filter: invert(56%) sepia(97%) saturate(341%) hue-rotate(122deg) brightness(91%) contrast(87%);
+}
+
+
+@media (max-width: 48em) {
+
+    footer .container,
+    footer .container .navigation__list-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .container .logo {
+        margin-inline: 0;
+    }
+
+    footer .container .navigation__list-container {
+        align-items: center;
+        margin-block: 2rem;
+    }
+
+    footer .container .navigation__list-container .navigation__list {
+        text-align: center;
+    }
+
+    footer .container .navigation__list-container .navigation__list li {
+        margin-block-end: 1rem;
+    }
+
+    footer .container .social {
+        margin: auto;
+    }
+
+    footer .container .social a {
+        inline-size: 2rem;
+        block-size: 2rem;
+    }
+}
+
+/* End footer */
